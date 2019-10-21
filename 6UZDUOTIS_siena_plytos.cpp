@@ -45,7 +45,7 @@ int main() {
     cout<<LangoPlotas<<endl;
 
     KiekPlytu(Plytosplotas, SienosPlotas, LangoPlotas, kiekReikesPlytu);
-    cout<<round(kiekReikesPlytu)<<endl;
+    cout<<ceil(kiekReikesPlytu)<<endl;
 
     KiekPaleciu(kiekReikesPlytu, plytuSkaiciusPaleteje, kiekReikesPaleciu);
     cout<<round(kiekReikesPaleciu)<<endl;
@@ -81,5 +81,5 @@ void nuskaitymas (float &plytosIlgis, float &plytosPlotis, int &sienosIlgis, int
     kiekReikesPaleciu = kiekReikesPlytu/plytuSkaiciusPaleteje;
  }
 void rasymasIFaila(float kiekReikesPlytu, float kiekReikesPaleciu){
-    out<<round(kiekReikesPlytu)<<"   "<<round(kiekReikesPaleciu)<<endl;
+    out<<ceil(kiekReikesPlytu)<<"   "<<round(kiekReikesPaleciu)<<endl;
 }
